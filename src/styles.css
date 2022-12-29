@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Lato:wght@300&display=swap');
+
+/* CSS RESET */
+* {
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*VARIABLES*/
+:root {
+  /*COLOR SCHEME*/
+  --MAINCOLOR: #6B9080;
+  --EFFECTCOLOR: #6B9080;
+  --FONTCOLOR-DARK:#000;
+  --FONTCOLOR-LIGHT: #fff;
+  --BGCOLOR-DARK: #6B9080;
+  --BGCOLOR-EFFECT: #6B9080;
+  --BGCOLOR-LIGHT:#ebebeb;
+  --BGCOLOR-NEUTRAL:#fff;
+
+  /*GENERAL*/
+  --PADDING: 1rem ;
+  --PADDING-SMALL: 0.5rem;
+  --PADDING-XS: 0.2rem;
+  --PADDING-NONE: 0rem;
+  --MARGIN: 1rem;
+  --MARGIN-SMALL: 0.5rem;
+  --MARGIN-XS: 0.2rem;
+  --MARGIN-NONE: 0rem;
+}
+
+/*GENERAL STYLES*/
+
+h1, h2, h3, h4, h5, h6, a, p {
+  margin: var(--MARGIN-SMALL);
+  padding: var(--PADDING-SMALL);
+}
+
+
+/*PAGE LAYOUT AND MEDIA QUERYS*/
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: var(--BGCOLOR-LIGHT);
+  text-align: center;
+  min-height: 100%;
+  position: relative;
+}
+
+header {
+  margin: var(--MARGIN-NONE);
+  padding: var(--PADDING);
+  color: var(--FONTCOLOR-LIGHT);
+  background-color: var(--BGCOLOR-DARK);
+}
+
+main {
+  margin: var(--MARGIN-SMALL);
+  padding: var(--PADDING);
+  padding-bottom: 7rem;
+}
+
+footer {
+  margin: var(--MARGIN-NONE);
+  padding: var(--PADDING);
+  color: var(--FONTCOLOR-LIGHT);
+  background-color: var(--BGCOLOR-EFFECT);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 7rem;
+}
+
+footer a {
+  color: var(--FONTCOLOR-LIGHT);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: var(--FONTCOLOR-DARK);
+}
+
+p {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 0.5rem;
+}
+
+/*tic-tac-toe*/
+
+.board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 300px;
+  text-align: center;
+  margin: auto;
+}
+
+.square {
+  background-color: var(--BGCOLOR-NEUTRAL);
+  border: solid 1px #000;
+  height: 100px;
+  width: 100px;
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+.square:nth-child(1) {
+  border-radius: 2rem 0 0 0;
+}
+
+.square:nth-child(3) {
+  border-radius: 0 2rem 0 0;
+}
+
+.square:nth-child(7) {
+  border-radius: 0 0 0 2rem;
+}
+
+.square:nth-child(9) {
+  border-radius: 0 0 2rem 0;
+}
+
+.highlight {
+  color: red;
+}
+
+.reset {
+  margin: var(--MARGIN-SMALL);
+  padding: 0.8rem 2rem 0.8rem 2rem;
+  color: var(--FONTCOLOR-LIGHT);
+  background-color: var(--BGCOLOR-EFFECT);
+  border: none;
+  border-radius: 3rem;    
+  font-weight: bold;    
+  text-align: center;
+  display: inline-block;
+  font-size: 1rem;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.reset:hover {
+  color: var(--FONTCOLOR-DARK);
+  border: solid 1px;
+}
