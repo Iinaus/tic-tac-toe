@@ -8,7 +8,7 @@
 
 ## About   
 
-This Tic-Tac-Toe React application was build as an exercise for React course in Vaasa University of Applied Sciences. The assingment was to ceate a game of "Tic Tac Toe" in React and use a grid of 9 buttons. Focus on the logic (game state, winner, draw, end of the game, etc.) - the looks of the game are not important.
+This Tic-Tac-Toe React application was build as an exercise for React course in Vaasa University of Applied Sciences. The assignment was to ceate a game of "Tic Tac Toe" in React and use a grid of 9 buttons. Focus on the logic (game state, winner, draw, end of the game, etc.) - the looks of the game are not important.
 
 The game logic works fine, although I know that the checkWinner function is not as good as possible. The function is not as reactful and dry as it should, but due to deadline limitations it is what it is. Hopefully I have time to fix it later.
 
